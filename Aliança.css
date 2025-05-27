@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(98, 98, 98);
+}
+
+.img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu ul{
+    display: flex;
+    padding: 1px;
+  }
+  .menu  li{
+    display: flex;
+    padding: 8px;
+    border: black 4px solid;
+    margin-top: 10px;
+    color:rgb(0, 0, 0) ;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
