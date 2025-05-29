@@ -1,30 +1,109 @@
-body{
-    background-color: rgb(98, 98, 98);
+body {
+  background-color: rgb(98, 98, 98);
+  display: flex;
+  justify-content: center;
+
 }
 
-.img{
+.container{
+  background-color: #b98f6e;
+  width: 60%;
+  display: flex;
+  padding: 30px;
+  margin: 20px;
+}
+.titulo{
+  background-color: #bc8155;
+  width: 50%;
+  border: 5px black solid;
+  border-radius: 10px;
+  margin-left: 3%;
+}
+
+.parte-direita{
+  padding: 20px;
+  background-color: #bc8155;
+  width: 40%;
+  font-size: 116%;
+  border: 5px black solid;
+}
+
+.conteudo{
+  font-size: 20px;
+  max-width: 50%;
+  margin-left: 30px;
+}
+
+.img img{
+  width: 60%;
+  margin-left: 30px;
+ 
+}
+
+------------------------------
+.parte-esquerda{  
+  background-color: rgba(0, 0, 255, 0.33);
+} 
+
+
+.menu {
+  margin-top: auto;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.menu {
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.menu ul {
+  display: flex;
+  padding: 1px;
+}
+
+.menu li {
+  display: flex;
+  padding: 8px;
+  border: black 4px solid;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.menu a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 15px;
   }
-  .menu ul{
-    display: flex;
-    padding: 1px;
+ 
+   .parte-direita {
+    width: 210px;
+    margin: 0;
+    padding: 10px;
   }
-  .menu  li{
-    display: flex;
-    padding: 8px;
-    border: black 4px solid;
-    margin-top: 10px;
-    color:rgb(0, 0, 0) ;
+ 
+   .titulo2 {
+    width: 700px;
+    padding: 50px;
+    font-size: 8px;
   }
-  
-  .menu a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+ 
+  .img img {
+    width: 100%;
+    margin: 10px 0;
+  }
+ 
+  .menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+ 
+  .menu li {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}

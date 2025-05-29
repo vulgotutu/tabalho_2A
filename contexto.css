@@ -2,7 +2,7 @@ body {
   background-color: rgb(93, 93, 92);
   display: flex;
   justify-content: center;
-  overflow: hidden;
+  
 }
 .popover {
   position: relative;
@@ -74,43 +74,63 @@ body {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
+
+
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
   .container {
     flex-direction: column;
     align-items: center;
-    padding: 35px;
-    height: 600px;
-}
+    padding: 20px;
+  }
+
   .popover {
-    width: 75%;
-    padding: 40px;
+    width: 95%;
+    padding: 20px;
+    font-size: 16px;
+   right: 10px;
+    
+  }
+
+  .titulo h1 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .titulo p {
+    text-align: justify;
+    font-weight: normal;
+    margin-bottom: 15px;
   }
 
   .img img {
-    max-width: 95%;
-    margin-bottom: 50px;
-  
+    width: 99%;
+    margin: 20px 0;
+    border: 2px solid black;
+    border-radius: 6px;
   }
 
   .menu ul {
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 10px;
     padding: 0;
   }
 
   .menu li {
-    width: 80%;
+    width: 90%;
     justify-content: center;
-    text-align: center;
+    border-radius: 8px;
   }
 
   .menu a {
-    font-size: 18px;
-    color: rgb(0, 0, 0);
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
   }
 }
-
-
-
-
